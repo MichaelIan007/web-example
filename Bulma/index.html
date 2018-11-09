@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bulma Integration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    
+    <style>
+    
+    .hero {
+        background-image: url('Nature-Blur-Wallpapers-13.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .hero-body > div >h1 {
+        color: rgb(151, 43, 43)
+    }
+
+    .hero-body > div >h2 {
+        color: rgb(218, 203, 203)
+    }
+
+    .parallax {
+    /* The image used */
+    background-image: url("img/wall1.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    color: white;
+    background-color: rgb(140, 156, 5)
+}
+    
+    </style>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <nav class="navbar is-success">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-item">MI</a>
+
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-end">
+                        <a href="#" class="navbar-item">Home</a>
+                        <a href="#" class="navbar-item">Gallery</a>
+                        <a href="#" class="navbar-item">About</a>
+                        <a href="#" class="navbar-item">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Michael's Photography
+                </h1>
+                <h2 class="subtitle">
+                    Capturing Moments | Creating Memories
+                </h2>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <div class="parallax"></div>
+
+    <section class="section">
+        <div class="container">
+            <div class="content has-text-centered">
+
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                
+                    <img src="nature_images/15-beach-sea-photography.jpg" alt="">
+                
+            </div>
+            <div class="column">
+                <img src="nature_images/70e4d6d6108f68cfa6e50a44cbd9e115_large.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="nature_images/741044d7f68c3ff2ea2935a26b857b1d5189541feaa22f7f117ff17d75c0f890.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                
+                    <img src="nature_images/maxresdefault.jpg" alt="">
+                
+            </div>
+            <div class="column">
+                <img src="nature_images/Beautiful_Wallpaper_1080p_Full_HD.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="nature_images/c932fc0bab19bb0769ea6d39018d684c.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Built and powered by Michael Inc.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#' +burger.dataset.target);
+
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+        });
+    })();
+    
+    </script>
+</body>
+</html>
